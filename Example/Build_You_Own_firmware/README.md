@@ -1,4 +1,4 @@
-* [中文版本](/Example/Build_You_Self_firmware/README_zh.md)
+* [中文版本](/Example/Build_You_Own_firmware/README_zh.md)
 # Build your own firmware
 ## Project Setup
 ### CubeIDE

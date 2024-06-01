@@ -97,10 +97,8 @@ Open Tools/WeActStudio_Upgrade_Tool and follow the prompts.
 ## Catalog Description
 | Directory name | content |
 |:--:| :--:|
-|Doc| Data sheet/reference manual |
 |Hardware| Hardware development data |
 |Examples| Software routines |
-|SDK| Software SDK|
 |Tools| Tools|
 
 ```

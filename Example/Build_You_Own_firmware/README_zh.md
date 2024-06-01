@@ -1,4 +1,4 @@
-* [English version](/Example/Build_You_Self_firmware/README.md)
+* [English version](/Example/Build_You_Own_firmware/README.md)
 # 构建自己的固件
 ## 工程设置
 ### CubeIDE
