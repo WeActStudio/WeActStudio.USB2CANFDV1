@@ -7,6 +7,9 @@ STM32G0B1CBT6
 CANFD/CAN2.0  
 > 1500V隔离, 速率最大5Mbps,支持cangaroo或二次开发
 
+连接器  
+> 3.81mm 1x3P WJ15EDGK-3.81-3P
+
 ## SLCAN协议说明
 > 采用虚拟串口，命令如下:
 - `O[CR]` - 打开CAN通道

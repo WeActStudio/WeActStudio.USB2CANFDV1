@@ -7,6 +7,9 @@ STM32G0B1CBT6
 CANFD/CAN2.0  
 > 1500V isolation, 5Mbps Max, support cangaroo or secondary development
 
+Connector  
+> 3.81mm 1x3P WJ15EDGK-3.81-3P
+
 ## SLCAN Protocol Description
 > Using the virtual serial, the command is as follows:
 - `O[CR]` - Opens the CAN channel
