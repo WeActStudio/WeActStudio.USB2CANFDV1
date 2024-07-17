@@ -5,7 +5,7 @@ STM32G0B1CBT6
 > 64Mhz Max,128KB RAM,128KB ROM
 
 CANFD/CAN2.0  
-> 1500V隔离, 速率最大5Mbps,支持cangaroo或二次开发
+> 1500V隔离, 速率最大5Mbps，支持cangaroo或二次开发，收发器型号：SIT1051A&芯力特
 
 连接器  
 > 3.81mm 1x3P WJ15EDGK-3.81-3P
@@ -105,6 +105,7 @@ CANFD消息长度如下所示 (用十六进制表示):
 ## 目录说明
 |目录名称|内容|
 | :--:|:--:|
+|Doc|数据手册|
 |Hardware| 硬件开发资料|
 |Examples|软件例程|
 |Tools|工具|

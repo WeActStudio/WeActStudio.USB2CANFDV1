@@ -5,7 +5,7 @@ STM32G0B1CBT6
 > 64Mhz Max,128KB RAM,128KB ROM
 
 CANFD/CAN2.0  
-> 1500V isolation, 5Mbps Max, support cangaroo or secondary development
+> 1500V isolation, 5Mbps Max, support cangaroo or secondary development. Transceiver part number: SIT1051A&sitcores
 
 Connector  
 > 3.81mm 1x3P WJ15EDGK-3.81-3P
@@ -105,6 +105,7 @@ Open the STM32CubeProgrammer, connect the SWD interface of the module using STLi
 ## Catalog Description
 | Directory name | content |
 |:--:| :--:|
+|Doc|Datasheet|
 |Hardware| Hardware development data |
 |Examples| Software routines |
 |Tools| Tools|
