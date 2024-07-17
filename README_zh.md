@@ -97,9 +97,10 @@ CANFD消息长度如下所示 (用十六进制表示):
 打开Tools/WeActStudio_Upgrade_Tool，根据界面提示操作。
 ![display](Images/WeActStudio_Upgrade_Tool_zh.png)
 
-## 如何彻底清空Flash（不可恢复）
+## 如何彻底清空Flash
 打开STM32CubeProgrammer，使用STLink连接模块SWD接口，执行以下操作：
 ![display](Images/flash_erase.png)
+> 如需要恢复出厂固件，见`Firmware/README`说明
 
 ## 目录说明
 |目录名称|内容|

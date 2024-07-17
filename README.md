@@ -97,9 +97,10 @@ When the firmware is brushed dead, short DIO and GND to power on, the blue light
 Open Tools/WeActStudio_Upgrade_Tool and follow the prompts.
 ![display](Images/WeActStudio_Upgrade_Tool_en.png)
 
-## How to completely empty Flash (unrecoverable)
+## How to completely empty Flash
 Open the STM32CubeProgrammer, connect the SWD interface of the module using STLink, and perform the following operations:  
 ![display](Images/flash_erase.png)
+> If you need to restore factory Firmware, see the `Firmware/README` instructions
 
 ## Catalog Description
 | Directory name | content |
