@@ -30,15 +30,15 @@ CANFD/CAN2.0
 - `SB[CR]` - 设置标称位比特率为 62.5k
 - `SC[CR]` - 设置标称位比特率为 33.3k
 - `SD[CR]` - 设置标称位比特率为 5k
-- `Sxxyy[CR]` - 自定义标称位比特率 (60/2=30Mhz CAN时钟) [xx=seg1(hex,0x02~0xff), yy=seg2(hex,0x02~0x80)]
-- `Sddxxyy[CR]` - 自定义标称位比特率 ([60/div]Mhz CAN时钟) [dd=div(hex,0x01~0xff), xx=seg1(hex,0x02~0xff), yy=seg2(hex,0x02~0x80)]
+- `Sxxyy[CR]` - 自定义标称位比特率 (60/2=30Mhz CAN时钟) [xx=seg1(hex,0x02\~0xff), yy=seg2(hex,0x02\~0x80)]
+- `Sddxxyy[CR]` - 自定义标称位比特率 ([60/div]Mhz CAN时钟) [dd=div(hex,0x01\~0xff), xx=seg1(hex,0x02\~0xff), yy=seg2(hex,0x02\~0x80)]
 - `Y1[CR]` - 设置CANFD数据段比特率为 1M
 - `Y2[CR]` - 设置CANFD数据段比特率为 2M (默认)
 - `Y3[CR]` - 设置CANFD数据段比特率为 3M
 - `Y4[CR]` - 设置CANFD数据段比特率为 4M
 - `Y5[CR]` - 设置CANFD数据段比特率为 5M
-- `Yxxyy[CR]` - 自定义CANFD数据段比特率 (60Mhz CAN时钟) [xx=seg1(hex,0x01~0x20), yy=seg2(hex,0x01~0x10)]
-- `Yddxxyy[CR]` - 自定义CANFD数据段比特率 ([60/div]Mhz CAN时钟) [dd=div(hex,0x01~0x20), xx=seg1(hex,0x01~0x20), yy=seg2(hex,0x01~0x10)]
+- `Yxxyy[CR]` - 自定义CANFD数据段比特率 (60Mhz CAN时钟) [xx=seg1(hex,0x01\~0x20), yy=seg2(hex,0x01\~0x10)]
+- `Yddxxyy[CR]` - 自定义CANFD数据段比特率 ([60/div]Mhz CAN时钟) [dd=div(hex,0x01\~0x20), xx=seg1(hex,0x01\~0x20), yy=seg2(hex,0x01\~0x10)]
 - `M0[CR]` - 设置为正常模式 (默认)
 - `M1[CR]` - 设置为监听模式
 - `A0[CR]` - 关闭自动重发 (默认)

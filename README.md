@@ -30,15 +30,15 @@ Connector
 - `SB[CR]` - Set the nominal bit rate to 62.5k
 - `SC[CR]` - Set the nominal bit rate to 33.3k
 - `SD[CR]` - Set the nominal bit rate to 5k
-- `Sxxyy[CR]` - Custom nominal bit rate (60/2=30Mhz CAN clock) [xx=seg1(hex,0x02~0xff), yy=seg2(hex,0x02~0x80)]
-- `Sddxxyy[CR]` - Custom nominal bit rate ([60/div]Mhz CAN clock) [dd=div(hex,0x01~0xff), xx=seg1(hex,0x02~0xff), yy=seg2(hex,0x02~0x80)]
+- `Sxxyy[CR]` - Custom nominal bit rate (60/2=30Mhz CAN clock) [xx=seg1(hex,0x02\~0xff), yy=seg2(hex,0x02\~0x80)]
+- `Sddxxyy[CR]` - Custom nominal bit rate ([60/div]Mhz CAN clock) [dd=div(hex,0x01\~0xff), xx=seg1(hex,0x02\~0xff), yy=seg2(hex,0x02\~0x80)]
 - `Y1[CR]` - Set the CANFD data segment bit rate to 1M
 - `Y2[CR]` - Set CANFD data segment bit rate to 2M (default)
 - `Y3[CR]` - Set the CANFD data segment bit rate to 3M
 - `Y4[CR]` - Set the CANFD data segment bit rate to 4M
 - `Y5[CR]` - Set the CANFD data segment bit rate to 5M
-- `Yxxyy[CR]` - Custom CANFD data segment bit rate (60Mhz CAN clock) [xx=seg1(hex,0x01~0x20), yy=seg2(hex,0x01~0x10)]
-- `Yddxxyy[CR]` - Custom CANFD data segment bit rate ([60/div]Mhz CAN clock) [dd=div(hex,0x01~0x20), xx=seg1(hex,0x01~0x20), yy=seg2(hex,0x01~0x10)]
+- `Yxxyy[CR]` - Custom CANFD data segment bit rate (60Mhz CAN clock) [xx=seg1(hex,0x01\~0x20), yy=seg2(hex,0x01\~0x10)]
+- `Yddxxyy[CR]` - Custom CANFD data segment bit rate ([60/div]Mhz CAN clock) [dd=div(hex,0x01\~0x20), xx=seg1(hex,0x01\~0x20), yy=seg2(hex,0x01\~0x10)]
 - `M0[CR]` - Set to normal mode (default)
 - `M1[CR]` - Set to silent mode
 - `A0[CR]` - Turn off automatic retransmission (default)
