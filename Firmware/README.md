@@ -26,3 +26,7 @@ WRP1A_END = 0x1
 ### V1.0.0.2
 1. Optimize the USB serial number naming rule to avoid repetition. (In later versions, if an upgrade failure message is displayed, the device needs to short-circuit DIO and GND pins and power on to forcibly enter the firmware upgrade mode)
 2. Fix the abnormal TX/RX indicator display Bug, and optimize the logic: If the sending and receiving period is less than 50mS, it is always on.
+### V1.0.0.3
+1. Add more common baud rate commands.
+2. The custom baud rate command supports the clock frequency division function.
+3. The `S7\r` command changes the baud rate from 750kbps to 800Kbps.

@@ -11,6 +11,8 @@ CANFD/CAN2.0
 > 3.81mm 1x3P WJ15EDGK-3.81-3P
 
 ## SLCAN协议说明
+> 请升级到最新的固件版本以支持更多的波特率
+
 > 采用虚拟串口，命令如下:
 - `O[CR]` - 打开CAN通道
 - `C[CR]` - 关闭CAN通道
@@ -21,16 +23,22 @@ CANFD/CAN2.0
 - `S4[CR]` - 设置标称位比特率为 125k (默认)
 - `S5[CR]` - 设置标称位比特率为 250k
 - `S6[CR]` - 设置标称位比特率为 500k
-- `S7[CR]` - 设置标称位比特率为 750k
+- `S7[CR]` - 设置标称位比特率为 800k
 - `S8[CR]` - 设置标称位比特率为 1M
 - `S9[CR]` - 设置标称位比特率为 83.3k
-- `Sxxyy[CR]` - 自定义标称位比特率(CAN时钟为30Mhz) [xx=seg1(hex), yy=seg2(hex)]
+- `SA[CR]` - 设置标称位比特率为 75k
+- `SB[CR]` - 设置标称位比特率为 62.5k
+- `SC[CR]` - 设置标称位比特率为 33.3k
+- `SD[CR]` - 设置标称位比特率为 5k
+- `Sxxyy[CR]` - 自定义标称位比特率 (60/2=30Mhz CAN时钟) [xx=seg1(hex,0x02~0xff), yy=seg2(hex,0x02~0x80)]
+- `Sddxxyy[CR]` - 自定义标称位比特率 ([60/div]Mhz CAN时钟) [dd=div(hex,0x01~0xff), xx=seg1(hex,0x02~0xff), yy=seg2(hex,0x02~0x80)]
 - `Y1[CR]` - 设置CANFD数据段比特率为 1M
 - `Y2[CR]` - 设置CANFD数据段比特率为 2M (默认)
 - `Y3[CR]` - 设置CANFD数据段比特率为 3M
 - `Y4[CR]` - 设置CANFD数据段比特率为 4M
 - `Y5[CR]` - 设置CANFD数据段比特率为 5M
-- `Yxxyy[CR]` - 自定义CANFD数据段比特率(CAN时钟为60Mhz) [xx=seg1(hex), yy=seg2(hex)]
+- `Yxxyy[CR]` - 自定义CANFD数据段比特率 (60Mhz CAN时钟) [xx=seg1(hex,0x01~0x20), yy=seg2(hex,0x01~0x10)]
+- `Yddxxyy[CR]` - 自定义CANFD数据段比特率 ([60/div]Mhz CAN时钟) [dd=div(hex,0x01~0x20), xx=seg1(hex,0x01~0x20), yy=seg2(hex,0x01~0x10)]
 - `M0[CR]` - 设置为正常模式 (默认)
 - `M1[CR]` - 设置为监听模式
 - `A0[CR]` - 关闭自动重发 (默认)
@@ -47,7 +55,7 @@ CANFD/CAN2.0
 - `E[CR]` - 读取故障状态
 - `X[CR]` - 进入固件升级模式
 
-[CR]：0x0D (hex),`\r` (ascii) 
+`[CR]` : `0x0D` (hex), `\r` (ascii)
 
 **命令发送后返回状态说明**  
 - [CR]：发送成功  
@@ -64,7 +72,8 @@ CANFD消息长度如下所示 (用十六进制表示):
 - `E`: 长度 = 48
 - `F`: 长度 = 64
 
-上位机见Tools/cangaroo
+**上位机见Tools/cangaroo**  
+**自定义比特率设置值计算说明文档位于`Doc/CAN Bitrate Calculate_波特率计算.xlsx`**
 
 ## 管脚说明
 |管脚|定义|说明|
