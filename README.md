@@ -97,6 +97,7 @@ The CANFD message length is as follows (in hex):
 
 ## How to compile your own firmware
 See Example\Build_You_Own_firmware
+> SLCAN firmware is open source, see [WeActStudio.USB2CANFDV1.SLCAN_Firmware](https://github.com/WeActStudio/WeActStudio.USB2CANFDV1.SLCAN_Firmware.git)
 
 ## How to force firmware upgrade mode
 When the firmware is brushed dead, short DIO and GND to power on, the blue light is on and then released, and the red light flashes slowly, indicating that is currently in upgrade mode.

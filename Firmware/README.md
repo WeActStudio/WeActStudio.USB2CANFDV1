@@ -30,3 +30,8 @@ WRP1A_END = 0x1
 1. Add more common baud rate commands.
 2. The custom baud rate command supports the clock frequency division function.
 3. The `S7\r` command changes the baud rate from 750kbps to 800Kbps.
+### V1.0.0.4
+1. Improve the USB CDC receive and send performance.
+2. Fix the error code 0x07 when the USB CDC receives a large amount of data.
+3. Adjust the USB CDC send timeout logic, and do not disconnect the USB connection when the timeout occurs.
+4. Update the HAL library to the latest version.

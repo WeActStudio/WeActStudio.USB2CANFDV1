@@ -97,6 +97,7 @@ CANFD消息长度如下所示 (用十六进制表示):
 
 ## 如何编译自己的固件
 见Example\Build_You_Own_firmware
+> SLCAN固件已开源，见（[WeActStudio.USB2CANFDV1.SLCAN_Firmware](https://github.com/WeActStudio/WeActStudio.USB2CANFDV1.SLCAN_Firmware.git)）
 
 ## 如何强制进入固件升级模式
 当固件刷死时，短接DIO和GND上电，蓝灯亮起后松开，此时红灯慢闪，指示当前处于固件升级模式。
