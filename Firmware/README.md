@@ -35,3 +35,5 @@ WRP1A_END = 0x1
 2. Fix the error code 0x07 when the USB CDC receives a large amount of data.
 3. Adjust the USB CDC send timeout logic, and do not disconnect the USB connection when the timeout occurs.
 4. Update the HAL library to the latest version.
+### V1.0.0.5
+1. Fixed the issue where the device returned the 0x07 error code when it did not send a frame but received an erroneous frame.
