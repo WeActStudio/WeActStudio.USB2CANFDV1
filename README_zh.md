@@ -51,9 +51,21 @@ CANFD/CAN2.0
 - `DIIIIIIIILDD...[CR]` - 传输 CANFD 扩展帧 (不使能 BRS) [ID, length, data]
 - `bIIILDD...[CR]` - 传输 CANFD 标准帧 (使能 BRS) [ID, length, data]
 - `BIIIIIIIILDD...[CR]` - 传输 CANFD 扩展帧 (使能 BRS) [ID, length, data]
+- `0x80 + t, uint8_t length , uint16_t ID, uint8_t DLC, uint8_t *D...` - 传输数据帧 (标准ID) [length, ID, DLC, Data] 增强模式, length=ID+DLC+Data
+- `0x80 + T, uint8_t length , uint32_t ID, uint8_t DLC, uint8_t *D...` - 传输数据帧 (扩展ID) [length, ID, DLC, Data] 增强模式, length=ID+DLC+Data
+- `0x80 + r, uint8_t length , uint16_t ID, uint8_t DLC` - 传输远程帧 (标准ID) [length, ID, DLC] 增强模式, length=ID+DLC
+- `0x80 + R, uint8_t length , uint32_t ID, uint8_t DLC` - 传输远程帧 (扩展ID) [length, ID, DLC] 增强模式, length=ID+DLC
+- `0x80 + d, uint8_t length , uint16_t ID, uint8_t DLC, uint8_t *D...` - 传输 CANFD 标准帧 (不使能 BRS) [length, ID, DLC, Data] 增强模式, length=ID+DLC+Data
+- `0x80 + D, uint8_t length , uint32_t ID, uint8_t DLC, uint8_t *D...` - 传输 CANFD 扩展帧 (不使能 BRS) [length, ID, DLC, Data] 增强模式, length=ID+DLC+Data
+- `0x80 + b, uint8_t length , uint16_t ID, uint8_t DLC, uint8_t *D...` - 传输 CANFD 标准帧 (使能 BRS) [length, ID, DLC, Data] 增强模式, length=ID+DLC+Data
+- `0x80 + B, uint8_t length , uint32_t ID, uint8_t DLC, uint8_t *D...` - 传输 CANFD 扩展帧 (使能 BRS) [length, ID, DLC, Data] 增强模式, length=ID+DLC+Data
 - `V[CR]` - 读取固件版本
 - `E[CR]` - 读取故障状态
 - `X[CR]` - 进入固件升级模式
+- `H0[CR]` - 关闭SLCAN增强模式, 需要关闭CAN通道 (默认)
+- `H1[CR]` - 开启SLCAN增强模式, 需要关闭CAN通道
+- `fIIIMMM[CR]` - 设置标准ID过滤, 需要关闭CAN通道 [ID, mask] (默认: 0,0)
+- `FIIIIIIIIMMMMMMMM[CR]` - 设置扩展ID过滤, 需要关闭CAN通道 [ID, mask] (默认: 0,0)
 
 `[CR]` : `0x0D` (hex), `\r` (ascii)
 
@@ -62,7 +74,7 @@ CANFD/CAN2.0
 - 0x07: 发送失败
 
 **注意**  
-CANFD消息长度如下所示 (用十六进制表示):
+CANFD 报文长度定义如下（ASCII 字符表示，例如：`A`）（uint8_t DLC 为十六进制，例如：`0x0A`）：
 - `0-8`: 与标准CAN相同
 - `9`: 长度 = 12
 - `A`: 长度 = 16
