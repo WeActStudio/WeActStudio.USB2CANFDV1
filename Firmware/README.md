@@ -37,3 +37,9 @@ WRP1A_END = 0x1
 4. Update the HAL library to the latest version.
 ### V1.0.0.5
 1. Fixed the issue where the device returned the 0x07 error code when it did not send a frame but received an erroneous frame.
+### V1.0.0.6
+1. Adjusted the transmit and receive buffer packet sizes for CAN and USB from 16 to 128.
+2. Fixed the inconsistency between the remote frame protocol and actual implementation.
+3. Added frame filtering functionality.
+4. Added enhanced SLCAN mode to improve transmission efficiency.
+5. Optimized USB data processing logic.
