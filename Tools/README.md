@@ -14,6 +14,13 @@
 2. Add CAN sample rate options (50%, 62.5%, 75%) and CANFD sample rate options (87.5%).
 3. Add a few parameters to display.
 4. Fix the bug.
+### V0.2.4.3
+1. Added frame filtering function.
+2. Added enhanced SLCAN mode to improve transmission efficiency.
+3. Optimized serial port data processing logic.
+4. Fixed some logic issues in the transmit window.
+5. Optimized the device configuration window.
+6. add app version display,fix some bugs
 
 ## WeActStudio_Upgrade_Tool
 For firmware upgrade
