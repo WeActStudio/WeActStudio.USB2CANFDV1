@@ -135,8 +135,9 @@ CANFD 报文长度定义如下（ASCII 字符表示，例如：`A`）（uint8_t 
 ```
 /*---------------------------------------
 - WeAct Studio Official Link
-- taobao: weactstudio.taobao.com
-- aliexpress: weactstudio.aliexpress.com
+- taobao: WeActStudio.taobao.com
+- aliexpress 1: WeActStudio.aliexpress.com
+- aliexpress 2: WeActStudioOne.aliexpress.com
 - github: github.com/WeActStudio
 - gitee: gitee.com/WeAct-TC
 - blog: www.weact-tc.cn
