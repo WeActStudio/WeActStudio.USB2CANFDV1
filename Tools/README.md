@@ -24,6 +24,20 @@
 
 ## WeActStudio_Upgrade_Tool
 For firmware upgrade
+### How to Upgrade, Windows
+1. Extract WeActStudio_Upgrade_Tool.7z
+2. Run WeActStudio_Upgrade_Tool.exe
+3. Connect the device using a data cable
+4. Select the fpk firmware
+5. Open the serial port
+6. Click the "Send" button to start the upgrade
+
+### How to Upgrade, Linux , macOS or Windows
+1. Extract WeActStudio_Upgrade_Tool_Python.zip
+2. Connect the device using a data cable
+3. Run WeActStudio_Upgrade_Tool.py, need to install pyserial library  
+Example: python WeActStudio_Upgrade_Tool.py firmware.fpk
+4. Wait for the upgrade to complete.
 
 ## firmware_packager
 Firmware packaging tool, so that firmware support using the `WeActStudio_Upgrade_Tool` tool burning

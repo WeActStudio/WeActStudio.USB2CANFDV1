@@ -24,6 +24,20 @@
 
 ## WeActStudio_Upgrade_Tool
 用于固件升级
+### Windows下怎样升级
+1. 解压WeActStudio_Upgrade_Tool.7z
+2. 运行WeActStudio_Upgrade_Tool.exe
+3. 使用数据线连接设备
+4. 选择fpk固件
+5. 打开串口
+6. 点击发送按钮，开始升级
+
+### Linux、macOS或Windows下怎样升级
+1. 解压WeActStudio_Upgrade_Tool_Python.zip
+2. 使用数据线连接设备
+3. 运行WeActStudio_Upgrade_Tool.py, 需要安装pyserial库  
+示例：python WeActStudio_Upgrade_Tool.py firmware.fpk
+4. 等待升级完成
 
 ## firmware_packager
 固件打包工具，以支持使用`WeActStudio_Upgrade_Tool`工具烧录
