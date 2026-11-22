@@ -10,6 +10,16 @@ CANFD/CAN2.0
 Connector  
 > 3.81mm 1x3P WJ15EDGK-3.81-3P
 
+![display](Images/2.png)
+STM32G0B1CCU7 (firmware same as STM32G0B1CBT6)  
+> 64Mhz Max,128KB RAM,256KB ROM
+
+CANFD/CAN2.0  
+> 1500V isolation, 5Mbps Max, support cangaroo or secondary development. Transceiver part number: CA-IS2062A&Chipanalog
+
+Connector  
+> 3.81mm 1x3P WJ15EDGK-3.81-3P
+
 ## SLCAN Protocol Description
 > Please upgrade to the latest firmware version to support more baud rates
 

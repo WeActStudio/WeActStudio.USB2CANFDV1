@@ -4,8 +4,18 @@
 STM32G0B1CBT6  
 > 64Mhz Max,128KB RAM,128KB ROM
 
-CANFD/CAN2.0  
+CANFD/CAN2.0 
 > 1500V隔离, 速率最大5Mbps，支持cangaroo或二次开发，收发器型号：SIT1051A&芯力特
+
+连接器  
+> 3.81mm 1x3P WJ15EDGK-3.81-3P
+
+![display](Images/2.png)
+STM32G0B1CCU7 (跟STM32G0B1CBT6使用同一固件)  
+> 64Mhz Max,128KB RAM,256KB ROM
+
+CANFD/CAN2.0 
+> 2500V隔离, 速率最大5Mbps，支持cangaroo或二次开发，收发器型号：CA-IS2062A&Chipanalog
 
 连接器  
 > 3.81mm 1x3P WJ15EDGK-3.81-3P
